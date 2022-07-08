@@ -1,0 +1,264 @@
+# howdy friend!
+
+# want to make a website and host it on a cool domain? look no further! follow the steps below to get started:
+
+#  1. make a website, any website! https://workshops.hackclub.com/personal_website/
+#  2. fork hackclub/dns and edit this file, adding your DNS record
+#  3. open a pull request and someone will review
+#  4. then, share what you made in #ship; its on the world wide web!
+
+# check out https://orpheus.dino.icu for an example. happy hacking!
+
+# more details on https://meta.dino.icu
+
+# we look forward to seeing what you make! I'm watching 👀
+
+# –– orpheus (https://orpheus.dino.icu)
+
+# some guidelines:
+# - don't use the phrase "Hack Club" in your domain name or seem like you're representing hack club
+# - don't use a domain to pretend to be someone else
+# - keep it civil, don't be mean and change someone else's domain
+
+# make sure you're adding your subdomain in alphabetical order, so that it passes the DNS check!
+
+---
+'': # the bare domain
+- type: ALIAS
+  value: cname.vercel-dns.com.
+- ttl: 1
+  type: MX
+  values:
+  - exchange: aspmx.l.google.com.
+    preference: 1
+  - exchange: alt1.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt2.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt3.aspmx.l.google.com.
+    preference: 10
+  - exchange: alt4.aspmx.l.google.com.
+    preference: 10
+- ttl: 5
+  type: TXT
+  values:
+  - google-site-verification=LPx57IBOflR6ko3yB9xUp4MokUh_jXXNO8mVd0Tzh6k
+  - v=spf1 include:_spf.google.com ~all
+  - "00071672" # vercel verification code
+
+# "*": # wildcard redirect
+#   ttl: 1
+#   type: CNAME
+#   value: cname.vercel-dns.com.
+
+andrew: # by https://github.com/anddddrew
+  ttl: 1
+  type: CNAME
+  value: nijmeh.xyz.
+
+art: # by https://github.com/rajanwastaken
+  ttl: 1
+  type: CNAME
+  value: particle-generativeart.netlify.app.
+
+channle: # by https://github.com/cjdenio
+  ttl: 1
+  type: CNAME
+  value: channle.netlify.app.
+
+e: # drawing app - by https://github.com/sporeball
+  ttl: 1
+  type: CNAME
+  value: sporeball.github.io.
+  
+emojile: # wordle with slack emojis - https://github.com/yodalightsabr/emojile
+  ttl: 1
+  type: CNAME
+  value: yodalightsabr.github.io.
+
+geta: # yoda - https://getadinoicu.yodacode.repl.co/dino.png - get a dino from hackclub/dinosaurs api
+  ttl: 1
+  type: CNAME
+  value: ef35bb48-f121-4f7f-91f6-93f601559c24.id.repl.co.
+
+icons: # yoda - https://github.com/yodalightsabr/icons-dino-icu - a CDN for @hackclub/icons
+  ttl: 1
+  type: A
+  value: 76.76.21.21
+
+japroz: # Japroz Saini
+  ttl: 1
+  type: CNAME
+  value: japrozsaini.vercel.app.
+
+javier: # by https://github.com/J-cordz - my personal hack club scrapbook
+   ttl: 1
+   type: CNAME
+   value: cname.vercel-dns.com.
+
+kevin: # Kevin Yang
+  ttl: 1
+  type: CNAME
+  value: bykevinyang.netlify.app.
+
+kunal: # kunal
+  ttl: 1
+  type: NS
+  values: 
+  - ns1.vercel-dns.com.
+  - ns2.vercel-dns.com.
+
+low-ping: # roblox low ping finder site thingy; by https://github.com/lem6ns
+  ttl: 1
+  type: CNAME
+  value: lem6ns.github.io.
+
+meta: # meta page
+  ttl: 1
+  type: CNAME
+  value: cname.vercel-dns.com.
+
+mindson: # by rajan
+  ttl: 1
+  type: CNAME
+  value: mindson.netlify.app.
+
+niilas: # Niilas - repo: https://github.com/niilasoika/niilas.dino.icu
+  ttl: 1
+  type: CNAME
+  value: niilasoika.github.io.
+
+normie: # normie
+  ttl: 1
+  type: CNAME
+  value: normie.cc.
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# use this as an example for your own domain!
+
+orpheus: # prophet orpheus's page (when making your page enter your github username or slack id here)
+  ttl: 1 # the time to live of your domain; you don't need to change this
+  type: CNAME # the type of record you're creating; you don't need to change this unless your hosting provider requires it
+  value: cname.vercel-dns.com. # the value of the record; set this to what your hosting provider requires
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+parker: # parker.dino.icu; reserved by hack club bank
+- type: ALIAS
+  value: cname.vercel-dns.com.
+- ttl: 1
+  type: MX
+  values:
+  - exchange: aspmx.l.google.com.
+    preference: 1
+  - exchange: alt1.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt2.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt3.aspmx.l.google.com.
+    preference: 10
+  - exchange: alt4.aspmx.l.google.com.
+    preference: 10
+- ttl: 5
+  type: TXT
+  values:
+  - google-site-verification=XqT81Vm5K6PUs4sy90BWKQMEVPaIDAXxBPI_n773h-A
+  - v=spf1 include:_spf.google.com ~all
+
+pay: # by Ella
+  ttl: 1
+  type: CNAME
+  value: 72ce41e0-b635-4025-a3ab-519ba661d5b7.id.repl.co.
+
+scales: # (yet another?) currency slack bot (with some web UI) :D
+  ttl: 1
+  type: A
+  value: 150.136.254.91 # Oracle Always Free:tm: server lol
+
+short: # short.dino.icu; by kunal botla (.com)
+  ttl: 1
+  type: CNAME
+  value: cname.vercel-dns.com.
+
+spider: # spider.dino.icu; reserved by hack club bank
+- type: ALIAS
+  value: cname.vercel-dns.com.
+- ttl: 1
+  type: MX
+  values:
+  - exchange: aspmx.l.google.com.
+    preference: 1
+  - exchange: alt1.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt2.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt3.aspmx.l.google.com.
+    preference: 10
+  - exchange: alt4.aspmx.l.google.com.
+    preference: 10
+- ttl: 5
+  type: TXT
+  values:
+  - google-site-verification=i1xM1TEj6jJSVo8p9s8oGmSZW2Wo2MIyxhyb007OAuA
+  - v=spf1 include:_spf.google.com ~all
+
+stickers: # by https://github.com/lem6ns
+  ttl: 1
+  type: CNAME
+  value: discord-stickers.netlify.app.
+
+story:
+  ttl: 1
+  type: CNAME
+  value: cname.vercel-dns.com.
+  
+suryaansh:
+- ttl: 1
+  type: CNAME
+  value: suryaanshah.github.io.
+ 
+tejas: # by tej
+  ttl: 1
+  type: CNAME
+  value: tejasag.netlify.app.
+
+vercel:
+- ttl: 1
+  type: ALIAS
+  value: cname.vercel-dns.com.
+  
+vercel-a:
+  ttl: 1
+  type: A
+  value: 76.76.21.21
+
+vercel-alias:
+  ttl: 1
+  type: ALIAS
+  value: cname.vercel-dns.com.
+  
+vercel-cname:
+  ttl: 1
+  type: CNAME
+  value: cname.vercel-dns.com.
+
+vercel-ns:
+  ttl: 1
+  type: NS
+  values: 
+  - ns1.vercel-dns.com.
+  - ns2.vercel-dns.com.
+
+www: # redirect to bare domain
+  ttl: 1
+  type: CNAME
+  value: cname.vercel-dns.com.
+
+xn--c1h:
+- ttl: 1
+  type: ALIAS
+  value: cname.vercel-dns.com.
+
+xn--ct9h:
+  type: CNAME
+  value: b616c4f2-bfad-4b67-9c6d-ee6afc35cc0b.id.repl.co.
